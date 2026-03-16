@@ -88,6 +88,13 @@
 		searchButton.addEventListener("click", ()=>{
 			checkWeather(searchBox.value);
 		})
+
+		//add to enable Enter key press
+		searchBox.addEventListener("keypress", (event)=>{
+			if (event.key === "Enter"){
+				checkWeather(searchBox.value)
+			}
+		})
 	</script>
 </body>
 </html>
