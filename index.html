@@ -9,25 +9,25 @@
 	<div class="card">
 		<div class="search">
 			<input type="text" placeholder="Enter City Name" spellcheck="false">
-			<button><img src="../asset/LucideSearch.svg"></button>
+			<button><img src="/auliaweatherapp/asset/LucideSearch.svg"></button>
 	    </div>
 		<div class="error">
 			<p>Invalid City Name</p>
 		</div>
 		<div class="weather">
-			<img src="../asset/cloudy-day-2.svg" class="weather-icon">
+			<img src="/auliaweatherapp/asset/cloudy-day-2.svg" class="weather-icon">
 			<h1 class="temp">22°C</h1>
 			<h2 class="city">New York</h2>
 			<div class="details">
 				<div class="col">
-					<img src="../asset/humidity_white.png">
+					<img src="/auliaweatherapp/asset/humidity_white.png">
 					<div>
 						<p class="humidity">50%</p>
 						<p>Humidity</p>
 					</div>
 				</div>
 				<div class="col">
-					<img src="../asset/wind_white.png">
+					<img src="/auliaweatherapp/asset/wind_white.png">
 					<div>
 						<p class="wind">30 km/h</p>
 						<p>Wind Speed</p>
@@ -62,22 +62,22 @@
 				document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
 				if(data.weather[0].main == "Clear"){
-					weatherIcon.src = "../asset/day.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/day.svg";
 				}
 				else if (data.weather[0].main == "Clouds"){
-					weatherIcon.src = "../asset/cloudy-day-1.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/cloudy-day-1.svg";
 				}
 				else if (data.weather[0].main == "Snow"){
-					weatherIcon.src = "../asset/snowy-3.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/snowy-3.svg";
 				}
 				else if (data.weather[0].main == "Rain"){
-					weatherIcon.src = "../asset/rainy-6.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/rainy-6.svg";
 				}
 				else if (data.weather[0].main == "Drizzle"){
-					weatherIcon.src = "../asset/rainy-4.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/rainy-4.svg";
 				}
 				else if (data.weather[0].main == "Mist"){
-					weatherIcon.src = "../asset/cloudy.svg";
+					weatherIcon.src = "/auliaweatherapp/asset/cloudy.svg";
 				}
 				
 				document.querySelector(".weather").style.display = "block";
